@@ -1,0 +1,1230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik";
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 138rem;
+  margin: 0 auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8590c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scroll-up {
+  background-color: #ff4d30;
+  border: 3px solid #fff;
+  bottom: 5rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  height: 2rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  right: 5rem;
+  width: 2rem;
+  z-index: 20;
+  text-decoration: none;
+}
+
+.scroll-up a {
+  color: #fff;
+}
+
+.show-scroll {
+  display: flex;
+}
+
+.icon-mobile-nav {
+  font-size: 5rem;
+}
+
+.div-mobile-nav {
+  display: none;
+  position: absolute;
+  right: 5rem;
+  top: 3rem;
+}
+
+.logo1 {
+  width: 14rem;
+  height: 5rem;
+  display: none;
+  position: absolute;
+  left: 5rem;
+  top: 3rem;
+}
+
+.hidden {
+  overflow: hidden;
+}
+/* ********************* */
+/* HEADER SECTION */
+/* ********************* */
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 16rem 0;
+}
+
+.logo {
+  width: 14rem;
+  height: 5rem;
+}
+
+.header-ul-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header-li {
+  list-style: none;
+}
+
+.header-li-child {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.3s;
+}
+
+.header-li-child:hover {
+  color: #ec4b32;
+}
+
+.header-login-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sign-a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: black;
+  transition: all 0.3s;
+}
+
+.sign-a:hover {
+  color: #ec4b32;
+}
+
+.registration-a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  background-color: #ff4d30;
+  padding: 1.5rem 2.4rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.registration-a:hover {
+  background-color: #ec4b32;
+}
+
+/* ********************* */
+/* HERO SECTION */
+/* ********************* */
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.section-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.section-hero-h2 {
+  font-size: 2.2rem;
+  color: #010103;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.4rem;
+  color: #010103;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+}
+
+.section-hero-span {
+  color: #ff4d30;
+}
+
+.section-hero-p {
+  font-size: 1.6rem;
+  color: #706f7b;
+  margin: 0;
+  padding: 0 0 2rem 0;
+  line-height: 2rem;
+}
+
+.book-a {
+  color: #fff;
+  background-color: #ff4d30;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.9rem 3rem;
+  border-radius: 0.4rem;
+}
+
+.book-a:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  transition: all 0.3s;
+}
+
+.check-icon {
+  font-size: 2rem;
+}
+
+.learn-a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #010103;
+  border: 2px solid #010103;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1.6rem 3rem;
+  border-radius: 0.4rem;
+}
+
+.right-icon {
+  font-size: 2rem;
+}
+
+.learn-a:hover {
+  background-color: #fff;
+  color: #010103;
+  transition: all 0.3s;
+}
+
+.section-hero-buttons-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-car {
+  width: 60%;
+}
+
+/* ********************* */
+/* BOOK CAR SECTION */
+/* ********************* */
+
+#select-section {
+  padding: 20rem 0 10rem 0;
+}
+
+.form-select {
+  background-color: #fff;
+  padding: 3rem 4rem 4rem 4rem;
+  background-image: url(img/book-bg.6f629a1041e9fd9c6685.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.select-section-first-h2 {
+  font-size: 2.8rem;
+  padding-bottom: 1rem;
+}
+
+.select-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #010103;
+  padding-bottom: 1rem;
+}
+
+.select {
+  outline: none;
+  color: #ababab;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  border: 1px solid #ccd7e6;
+  border-radius: 3px;
+}
+
+.search-button {
+  color: #fff;
+  background-color: #ff4d30;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 5rem;
+  padding: 0.7rem 0rem 0.7rem 0;
+  align-self: self-end;
+  cursor: pointer;
+  border: none;
+}
+
+.grid-for-responsive {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.reservation-h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.reservation-close {
+  font-size: 2.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reservation-div {
+  background-color: #ff4d30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.reservation-container {
+  background-color: #fff;
+  padding: 0.2rem;
+  z-index: 9999;
+}
+
+.information-main {
+  color: #ec4b32;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.information-text {
+  color: #777;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+}
+
+.information-div {
+  background-color: #ffeae6;
+  padding: 0.1rem 3rem;
+}
+
+.location-title {
+  color: #ff4d30;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.location-icon {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.location-information-h {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.location-information-p {
+  color: #777;
+  font-size: 1.4rem;
+}
+
+.date {
+  outline: none;
+  border: 0.1rem solid #777;
+}
+
+.location-information-flex {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.location-information-flex:not(:last-child) {
+  padding-bottom: 3rem;
+}
+
+.car-title {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 0.2rem;
+}
+
+.car-model {
+  color: #ff4d30;
+}
+
+.car-img {
+  width: 38rem;
+  padding-top: 5rem;
+}
+
+.main-location-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.p-input-div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.input-for-text {
+  background-color: #dbdbdb;
+  border: none;
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 500;
+  outline: none;
+  padding: 1.4rem 1.5rem;
+}
+
+.div-of-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-information-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.information-p {
+  color: #777;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.snowflake-color {
+  color: #ff4d30;
+}
+
+.small-padding-for-email-input {
+  padding: 2rem 0 2rem 0;
+}
+
+.title-of-personal-information {
+  color: #ff4d30;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.p-for-checkbox {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: 300;
+}
+
+.main-div-of-personal-information {
+  padding: 2rem;
+  border-top: 1px solid #555;
+}
+
+.small-padding-for-address {
+  padding-top: 2rem;
+}
+
+.booking-button {
+  background-color: #ff4d30;
+  border: 1px solid #ff0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 1.2rem 2rem;
+  transition: all 0.2s;
+}
+
+.booking-button-div {
+  background-color: #dbdbdb;
+  padding: 3rem;
+  text-align: right;
+}
+
+.scroll-container {
+  width: 83rem;
+  height: 100vh;
+  overflow-y: auto;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  z-index: 1000;
+}
+
+/* Optional: Customize scrollbar appearance */
+.scroll-container::-webkit-scrollbar {
+  width: 0.6rem; /* Width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #fff; /* Color of the scrollbar track */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #ff4d30; /* Color of the scrollbar thumb */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.error-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4rem;
+  margin-right: 4rem;
+  background-color: #f8d7da;
+  border-radius: 0.8rem;
+  color: #721c24;
+  width: 100%;
+}
+
+.confirm-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.4rem;
+  margin-right: 4rem;
+  background-color: #c3fabe;
+  border-radius: 0.8rem;
+  color: #2a6817;
+  width: 100%;
+}
+
+.error-close-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000%;
+  z-index: 5;
+}
+
+/* ********************* */
+/* PLAN SECTION */
+/* ********************* */
+
+.section-of-plan {
+  padding: 4rem 0 0 0;
+}
+
+.title-of-plan {
+  text-align: center;
+}
+
+.min-title-of-plan {
+  font-family: Rubik, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.main-title-of-plan {
+  font-family: Poppins, sans-serif;
+  font-size: 4.2rem;
+  margin: 1.3rem 0 3rem;
+}
+
+.plan-container-boxes {
+  text-align: center;
+  padding: 1rem 6rem;
+}
+
+.plan-container-boxes-img {
+  width: 17rem;
+  height: auto;
+}
+
+.plan-container-boxes-h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.plan-container-boxes-p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.grid-of-plan-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem 0 12rem 0;
+}
+
+/* ********************* */
+/* RENTAL FLEET SECTION */
+/* ********************* */
+
+.flex-for-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.title-for-rental-fleet {
+  text-align: center;
+}
+
+.title-for-rental-fleet h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.title-for-rental-fleet h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 4.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.title-for-rental-fleet p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.btn-for-choose-car {
+  background-color: #e9e9e9;
+  border: none;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  text-align: left;
+  transition: all 0.2s;
+  max-width: 30rem;
+}
+
+.btn-for-choose-car:hover {
+  background-color: #ff4d30;
+  color: #fff;
+}
+
+.grid-for-rental-car-information {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.rent-fleet-img {
+  width: 50rem;
+  height: auto;
+}
+
+.grid-for-img-information-rental-car {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  align-items: center;
+}
+
+.div-for-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.colored-btn {
+  background-color: #ff4d30;
+  color: #fff;
+}
+
+.price-for-rent {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.div-for-rent-price {
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4d30;
+  color: #fff;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 1.5rem;
+  padding: 0.3rem 1.9rem;
+  height: 4.2rem;
+}
+
+.div-of-information-about-car {
+  color: #706f7b;
+  border-bottom: 2px solid #706f7b;
+  border-left: 2px solid #706f7b;
+  border-right: 2px solid #706f7b;
+  font-size: 1.6rem;
+  padding: 1.2rem 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+.div-of-information-about-car span:first-child {
+  border-right: 2px solid #706f7b;
+}
+
+.a-reserve-now {
+  background-color: #ff4d30;
+  box-shadow: 6px 6px 0 #efe9e9;
+  color: #fff;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-content: center;
+  margin-top: 1.4rem;
+  padding: 1rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* ********************* */
+/* BANNER SECTION */
+/* ********************* */
+
+.banner-section {
+  background-color: #2d2d2d;
+  margin: 18rem 0 0 0;
+  padding: 6rem 0;
+  width: 100%;
+}
+
+.div-for-banner {
+  color: #fff;
+  text-align: center;
+}
+
+.div-for-banner h2 {
+  font-size: 5.2rem;
+  line-height: 1.3;
+}
+
+.div-for-banner p {
+  font-size: 2.4rem;
+}
+
+.div-for-banner span {
+  color: #ff4d30;
+  font-weight: 500;
+}
+
+/* ********************* */
+/* CHOOSE SECTION */
+/* ********************* */
+
+.choose-section {
+  background-image: url(img/background.png);
+  background-position: -225px 255px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 10rem;
+  background-color: #fff;
+}
+
+.choose-cars {
+  height: auto;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 10rem;
+}
+
+.div-for-choose-text {
+  max-width: 70rem;
+}
+
+.div-for-choose-text h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.div-for-choose-text h2 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.div-for-choose-text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 3.3rem;
+}
+
+.div-for-choose-text a {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 2.5rem;
+  text-decoration: none;
+  width: 20rem;
+}
+
+.div-for-right-choose-text h2 {
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.div-for-right-choose-text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.flex-for-right-choose-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.flex-for-choose-section {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* ********************* */
+/* TESTIMONIAL SECTION */
+/* ********************* */
+
+.testimonial-section {
+  padding: 10rem 0 10rem 0;
+}
+
+.main-flex-for-testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.testimonials-div {
+  text-align: center;
+  max-width: 70rem;
+}
+
+.testimonials-div h3 {
+  font-family: Rubik, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.testimonials-div h2 {
+  font-size: 4.2rem;
+  margin-bottom: 1.4rem;
+}
+.testimonials-div p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.testimonial-box {
+  background-color: #fff;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.08);
+  padding: 5.4rem;
+  max-width: 54rem;
+  position: relative;
+}
+
+.testimonial-box img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+.testimonial-comment {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-bottom: 4rem;
+}
+
+.div-of-testimonial-information {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.div-of-testimonial-information h4 {
+  font-size: 1.8rem;
+}
+
+.div-of-testimonial-information p {
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.icon-for-testimonial {
+  color: #ff4d30;
+  position: absolute;
+  right: 3rem;
+  bottom: 6rem;
+  font-size: 6.2rem;
+}
+
+.flex-for-testimonial-boxes {
+  display: flex;
+  gap: 3rem;
+}
+
+/* ********************* */
+/* FAQ SECTION */
+/* ********************* */
+
+.faq-section {
+  background-image: url(img/backgroundimg.png);
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 10rem 0;
+  background-color: #fff;
+}
+
+.div-for-faq-title {
+  text-align: center;
+  max-width: 75rem;
+}
+
+.div-for-faq-title h3 {
+  font-size: 2.2rem;
+}
+
+.div-for-faq-title h2 {
+  font-size: 4.2rem;
+  margin-bottom: 1.7rem;
+}
+
+.div-for-faq-title p {
+  color: #706f7b;
+  font-size: 1.6rem;
+}
+
+.position-for-faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.active-question {
+  background-color: #ff4d30;
+  box-shadow: 0 1.2rem 15px 0.4rem rgba(255, 83, 48, 0.35);
+  color: #fff !important;
+}
+
+.main-div-of-faq {
+  padding: 0 2rem 0 2rem;
+}
+
+.faq {
+  max-width: 80rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+  padding: 2.4rem 2rem 2.4rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  color: gray;
+  line-height: 1.4;
+  background-color: #fff;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.answer p {
+  font-size: 1.6rem;
+  padding: 2.8rem 4rem;
+  line-height: 1.8;
+}
+
+.active .answer {
+  max-height: 30rem;
+  animation: fade 0.5s ease-in-out;
+}
+
+.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-icon {
+  transition: transform 0.5s ease-in;
+  font-size: 1.8rem;
+}
+
+/* ********************* */
+/* DOWNLOAD SECTION */
+/* ********************* */
+
+.download-section {
+  background-color: #f8f8f8;
+  background-image: url(img/background-download-img.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 10rem 0;
+  width: 100%;
+}
+
+.download-text {
+  max-width: 55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.download-text h2 {
+  color: #010103;
+  font-size: 4.2rem;
+  line-height: 1.4;
+}
+.download-text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.download-text-btns {
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+}
+
+.download-text-btns img {
+  width: 40%;
+}
+
+/* ********************* */
+/* FOOTER */
+/* ********************* */
+
+footer {
+  background-color: #fff;
+  padding: 10rem 0;
+}
+
+.grid-for-footer {
+  display: grid;
+  grid-template-columns: 27fr 21fr 21fr 21fr;
+  gap: 8rem;
+  justify-content: center;
+}
+
+.footer-content-1 {
+  list-style: none;
+}
+
+.footer-content-1 li:first-child span {
+  font-weight: 700;
+}
+
+.footer-content-1 li:first-child {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content-1 li:nth-child(2) {
+  color: #706f7b;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.footer-content-1 li:nth-child(3),
+.footer-content-1 li:nth-child(4) {
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content-1 li a,
+.footer-content-2 li a {
+  text-decoration: none;
+  color: #010103;
+  transition: all 0.2s;
+}
+
+.footer-icons {
+  transition: all 0.2s;
+}
+
+.footer-content-1 li:nth-child(3):hover,
+.footer-content-1 li:nth-child(4):hover {
+  color: #ff4d30;
+}
+
+.footer-content-1 li a:hover {
+  color: #ff4d30;
+}
+
+.footer-content-2 li a:hover {
+  color: #ff4d30;
+}
+
+.footer-content-2 {
+  list-style: none;
+}
+
+.footer-content-2 li:first-child {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.footer-content-2 li {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content-2 input {
+  background-color: #ececec;
+  border-color: transparent;
+  border-width: 1px;
+  font-family: Rubik, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 1rem 6rem;
+}
+
+.submit-email {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 0.3rem;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: 100%;
+}

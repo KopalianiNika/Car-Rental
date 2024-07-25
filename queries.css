@@ -1,0 +1,458 @@
+/************************************************************************************************/
+/* QUERIES CSS */
+/************************************************************************************************/
+
+@media (max-width: 88em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 79em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header-flex {
+    padding: 2rem 2rem 16rem 2rem;
+  }
+
+  .hero-car {
+    width: 55%;
+  }
+
+  .grid-for-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .form-select {
+    width: 130rem;
+  }
+
+  .search-button {
+    align-self: auto;
+  }
+}
+
+@media (max-width: 70em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .grid-for-rental-car-information {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 0 5rem 0 5rem;
+  }
+
+  .grid-for-img-information-rental-car {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .rent-fleet-img {
+    width: 70rem;
+    height: auto;
+  }
+
+  .btn-for-choose-car {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translate(-100%);
+    transition: all 0.3s;
+    z-index: 99;
+  }
+
+  .navbar .header-flex {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .logo {
+    width: 20rem;
+    height: auto;
+  }
+
+  .header-flex a {
+    font-size: 3rem;
+  }
+
+  .header-ul-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0;
+  }
+
+  .div-mobile-nav {
+    display: block;
+    z-index: 99;
+  }
+
+  .mobile-nav-close-outline {
+    display: none;
+  }
+
+  .navbar .mobile-nav-close-outline {
+    display: block;
+  }
+
+  .navbar .mobile-nav-menu-outline {
+    display: none;
+  }
+
+  .logo1 {
+    display: block;
+  }
+
+  .flex-for-mobile-header {
+    padding: 3rem 0 20rem 0;
+  }
+
+  .grid-for-footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .grid-for-footer ul li {
+    font-size: 2.2rem;
+  }
+
+  .footer-content-1 li:first-child() {
+    font-size: 2.2rem;
+  }
+
+  .footer-content-1 li:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .footer-content-1 li:nth-child(3) {
+    font-size: 2.2rem;
+  }
+
+  .footer-content-1 li:nth-child(4) {
+    font-size: 2.2rem;
+  }
+
+  .footer-content-1 li:nth-child(5) {
+    font-size: 2.2rem;
+  }
+
+  .submit-email {
+    width: 100%;
+  }
+
+  .footer-content-2 li input {
+    width: 100%;
+  }
+
+  .flex-for-choose-section {
+    flex-direction: column;
+    gap: 10rem;
+    padding: 5rem 40rem 0 40rem;
+  }
+
+  .div-for-choose-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .download-text {
+    font-size: 4rem;
+    padding-left: 3rem;
+  }
+
+  .flex-for-choose-section {
+    padding: 5rem 30rem 0 30rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .form-select {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .hero-car {
+    width: 50%;
+  }
+
+  .section-hero {
+    padding: 0 5rem 0 5rem;
+  }
+
+  .submit-email {
+    width: 80%;
+  }
+
+  .footer-content-2 li input {
+    width: 80%;
+  }
+
+  .grid-for-img-information-rental-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .rent-fleet-img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .hero-bg {
+    display: none;
+  }
+
+  .hero-car {
+    display: none;
+  }
+
+  .hero-flex {
+    justify-content: center;
+  }
+
+  .section-hero-text {
+    align-items: center;
+  }
+
+  .section-hero-text {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .section-hero-h2 {
+    font-size: 4rem;
+  }
+
+  .grid-for-responsive {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  .section-hero-p {
+    font-size: 2rem;
+  }
+
+  .section-hero-buttons-div a {
+    font-size: 2.6rem;
+  }
+
+  .form-select {
+    max-width: 90%;
+  }
+
+  .grid-for-responsive {
+    column-gap: 5rem;
+  }
+
+  .flex-for-testimonial-boxes {
+    flex-direction: column;
+  }
+
+  .testimonial-comment {
+    font-size: 3rem;
+  }
+
+  .testimonial-section {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .flex-for-choose-section {
+    padding: 5rem 20rem 0 20rem;
+  }
+
+  .form-select {
+    width: 80rem;
+  }
+
+  .grid-of-plan-boxes {
+    grid-template-columns: 1fr;
+    padding: 1rem 10rem 15rem 10rem;
+    justify-content: center;
+  }
+
+  .plan-container-boxes-h3 {
+    font-size: 3rem;
+  }
+
+  .plan-container-boxes-p {
+    font-size: 2rem;
+  }
+
+  .div-for-banner h2 {
+    font-size: 4.4rem;
+  }
+
+  .div-for-banner p {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .flex-for-choose-section {
+    padding: 5rem 10rem 0 10rem;
+  }
+
+  .flex-for-choose-section img {
+    width: 15rem;
+  }
+
+  .faq {
+    width: 100%;
+  }
+
+  .form-select {
+    width: 70rem;
+  }
+
+  .download-section {
+    background-image: none;
+  }
+
+  .grid-for-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-hero h2 {
+    font-size: 3.4rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .section-hero-p {
+    font-size: 2rem;
+  }
+
+  .section-hero-buttons-div a {
+    font-size: 2rem;
+  }
+
+  .scroll-container {
+    width: 100%;
+    top: 52%;
+  }
+
+  .div-of-information p {
+    padding-top: 1rem;
+  }
+
+  .reservation-h2 {
+    padding: 3rem 0 3rem 0;
+  }
+
+  .information-div {
+    padding: 1.5rem 3rem;
+  }
+
+  .main-location-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .location-title {
+    padding-bottom: 2rem;
+  }
+
+  .personal-information-div {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .booking-button-div {
+    text-align: center;
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 24em) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .div-for-banner h2 {
+    font-size: 3.8rem;
+  }
+
+  .div-for-choose-text p {
+    font-size: 2rem;
+  }
+
+  .flex-for-right-choose-text p {
+    font-size: 2rem;
+  }
+
+  .flex-for-choose-section {
+    padding: 5rem 5rem 0 5rem;
+  }
+
+  .icon-for-testimonial {
+    width: 10rem;
+  }
+
+  .section-hero-buttons-div {
+    flex-direction: column;
+  }
+
+  .section-hero-buttons-div a {
+    width: 20rem;
+  }
+
+  .flex-for-mobile-header {
+    padding: 3rem 0 10rem 0;
+  }
+
+  .section-hero-buttons-div a {
+    font-size: 2rem;
+  }
+
+  .title-for-rental-fleet {
+    width: 40rem;
+  }
+}

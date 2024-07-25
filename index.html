@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/rent-icon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="queries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="script.js"></script>
+  <title>Car Rental</title>
+</head>
+<header class="header">
+  <div class="container">
+    <div class="header-flex">
+      <img src="img/logo.png" alt="logo" class="logo" />
+      <ul class="header-ul-container">
+        <li class="header-li">
+          <a href="#" class="header-li-child">Home</a>
+        </li>
+        <li class="header-li">
+          <a href="#" class="header-li-child">About</a>
+        </li>
+        <li class="header-li">
+          <a href="#" class="header-li-child">Vehicle Models</a>
+        </li>
+        <li class="header-li">
+          <a href="#" class="header-li-child">Testimonials</a>
+        </li>
+        <li class="header-li">
+          <a href="#" class="header-li-child">Our Team</a>
+        </li>
+        <li class="header-li">
+          <a href="#" class="header-li-child">Contact</a>
+        </li>
+      </ul>
+      <div class="header-login-div">
+        <a href="#" class="sign-a">Sign In</a>
+        <a href="#" class="registration-a">Register</a>
+      </div>
+    </div>
+  </div>
+  <div class="flex-for-mobile-header">
+    <img src="img/logo.png" alt="logo" class="logo1">
+    <div class="div-mobile-nav">
+      <ion-icon name="menu-outline" class="icon-mobile-nav mobile-nav-menu-outline"></ion-icon>
+      <ion-icon name="close-outline" class="icon-mobile-nav mobile-nav-close-outline"></ion-icon>
+    </div>
+  </div>
+
+</header>
+<div class="scroll-up">
+  <a href="#"><ion-icon name="chevron-up-outline"></ion-icon></a>
+</div>
+
+<section class="section-hero">
+  <div class="container">
+    <img src="img/hero-bg.png" alt="hero-bg" class="hero-bg" />
+
+    <div class="hero-flex">
+      <div class="section-hero-text">
+        <h2 class="section-hero-h2">Plan your trip now</h2>
+        <h1>
+          Save <span class="section-hero-span">big</span> with our car rental
+        </h1>
+        <p class="section-hero-p">
+          Rent the car of your dreams. Unbeatable prices, unlimited miles,
+          flexible pick-up options and much more.
+        </p>
+        <div class="section-hero-buttons-div">
+          <a href="#select-section" class="book-a">Book Ride<ion-icon name="checkmark-circle-outline"
+              class="check-icon"></ion-icon></a>
+          <a href="#" class="learn-a">Learn More<ion-icon name="chevron-forward-outline"
+              class="right-icon"></ion-icon></a>
+        </div>
+      </div>
+      <img src="img/main-car.png" alt="hero-car" class="hero-car" />
+    </div>
+  </div>
+</section>
+
+<section id="select-section" class="select-section">
+  <div class="container">
+    <form action="" class="form-select">
+      <h2 class="select-section-first-h2">Book a car</h2>
+      <h2 class="error-title none">
+        All fields required!
+        <ion-icon name="close-outline" class="error-close-icon"></ion-icon>
+      </h2>
+      <h2 class="confirm-title none">
+        Check your email to confirm an order.<ion-icon name="close-outline" class="error-close-icon"></ion-icon>
+      </h2>
+      <div class="grid-for-responsive">
+        <div>
+          <label for="car-type" class="select-label"><ion-icon name="car-sport-outline"></ion-icon>Select Your Car
+            Type
+            <span class="snowflake-color">*</span></label>
+          <select id="car-type" name="cars" class="select select-car selector">
+            <option value="Select">Select your car type</option>
+            <option value="Mercedes-AMG Gt">Mercedes-AMG Gt</option>
+            <option value="Bmw G80">Bmw G80</option>
+          </select>
+        </div>
+        <div>
+          <label for="pick-up-location" class="select-label"><ion-icon name="location-outline"></ion-icon>Pick-up
+            <span class="snowflake-color">*</span></label>
+          <select id="pick-up-location" name="cars" class="select pick-up-option selector">
+            <option value="Select">Select pick up location</option>
+            <option value="Tbilisi">Tbilisi</option>
+            <option value="Gori">Gori</option>
+            <option value="Kutaisi">Kutaisi</option>
+            <option value="Batumi">Batumi</option>
+          </select>
+        </div>
+        <div>
+          <label for="drop-off-location" class="select-label"><ion-icon name="location-outline"></ion-icon> Drop-off
+            <span class="snowflake-color">*</span></label>
+          <select id="drop-off-location" name="cars" class="select drop-off-select selector">
+            <option value="Select">Select drop off location</option>
+            <option value="Tbilisi">Tbilisi</option>
+            <option value="Gori">Gori</option>
+            <option value="Kutaisi">Kutaisi</option>
+            <option value="Batumi">Batumi</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="pick-up-date" class="select-label"><ion-icon name="calendar-outline"></ion-icon>Pick-up <span
+              class="snowflake-color">*</span></label>
+          <input type="date" id="pick-up-date" class="select pick-up-input date-input" />
+        </div>
+        <div>
+          <label for="drop-off-date" class="select-label"><ion-icon name="calendar-outline"></ion-icon>Drop-off <span
+              class="snowflake-color">*</span></label>
+          <input type="date" id="drop-off-date" class="select drop-off-input date-input" />
+        </div>
+
+        <button type="submit" class="search-button">Search</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="scroll-container none">
+    <div class="reservation-container">
+      <div class="reservation-div">
+        <h2 class="reservation-h2">COMPLETE RESERVATION</h2>
+        <ion-icon name="close-outline" class="reservation-close"></ion-icon>
+      </div>
+      <div class="information-div">
+        <p class="information-main">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          Upon completing this reservation enquiry, you will receive:
+        </p>
+        <p class="information-text">
+          Your rental voucher to produce on arrival at the rental desk and a
+          toll-free customer support number.
+        </p>
+      </div>
+      <div class="main-location-div">
+        <div>
+          <p class="location-title">Location & Date</p>
+          <span class="location-information-flex">
+            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+            <div>
+              <h6 class="location-information-h pick-up">
+                Pick-up Date & Time
+              </h6>
+              <div class="p-input-div">
+                <p class="location-information-p pick-up-date">
+                  2024-07-27 /
+                </p>
+                <input type="time" id="pick-up-time" class="date" />
+              </div>
+            </div>
+          </span>
+          <span class="location-information-flex">
+            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+            <div>
+              <h6 class="location-information-h">Drop-off Date & Time</h6>
+              <div class="p-input-div">
+                <p class="location-information-p drop-off-p">
+                  2024-07-27 /
+                </p>
+                <input type="time" id="drop-off-time" class="date" />
+              </div>
+            </div>
+          </span>
+          <span class="location-information-flex">
+            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+            <div>
+              <h6 class="location-information-h">Pick-Up location</h6>
+              <p class="location-information-p pick-up-location">Tbilisi</p>
+            </div>
+          </span>
+          <span class="location-information-flex">
+            <ion-icon name="location-outline" class="location-icon"></ion-icon>
+            <div>
+              <h6 class="location-information-h">Drop-off Location</h6>
+              <p class="location-information-p drop-off-information">
+                Batumi
+              </p>
+            </div>
+          </span>
+        </div>
+
+        <div class="car-div">
+          <p class="car-title">
+            Car- <span class="car-model">Mercedes-AMG Gt</span>
+          </p>
+          <img src="img/car-Mercedes-AMG Gt.png" alt="car" class="car-img" />
+        </div>
+      </div>
+
+      <div class="main-div-of-personal-information">
+        <h2 class="title-of-personal-information">PERSONAL INFORMATION</h2>
+        <div class="personal-information-div">
+          <div class="div-of-information">
+            <label for="first-name" class="information-p">First Name <span class="snowflake-color">*</span></label>
+            <input type="text" id="first-name" class="input-for-text" placeholder="Enter your first name" />
+            <p>This field is required.</p>
+          </div>
+          <div class="div-of-information">
+            <label for="last-name" class="information-p">Last Name <span class="snowflake-color">*</span></label>
+            <input type="text" id="last-name" class="input-for-text" placeholder="Enter your last name" />
+            <p>This field is required.</p>
+          </div>
+          <div class="div-of-information">
+            <label for="phone-number" class="information-p">Phone Number <span class="snowflake-color">*</span></label>
+            <input type="text" id="phone-number" class="input-for-text" placeholder="Enter your phone number" />
+            <p>This field is required.</p>
+          </div>
+          <div class="div-of-information">
+            <label for="age" class="information-p">Age <span class="snowflake-color">*</span></label>
+            <input type="number" id="age" class="input-for-text" placeholder="18" />
+            <p>This field is required.</p>
+          </div>
+        </div>
+        <div class="div-of-information small-padding-for-email-input">
+          <label for="email" class="information-p">Email <span class="snowflake-color">*</span></label>
+          <input type="email" id="email" class="input-for-text" placeholder="Enter your email address" />
+          <p>This field is required.</p>
+        </div>
+        <div class="div-of-information">
+          <label for="address" class="information-p">Address <span class="snowflake-color">*</span></label>
+          <input type="text" id="address" class="input-for-text" placeholder="Enter your street address" />
+          <p>This field is required.</p>
+        </div>
+        <div class="personal-information-div small-padding-for-address">
+          <div class="div-of-information">
+            <label for="city" class="information-p">City <span class="snowflake-color">*</span></label>
+            <input type="text" id="city" class="input-for-text" placeholder="Enter your city" />
+            <p>This field is required.</p>
+          </div>
+          <div class="div-of-information">
+            <label for="zip-code" class="information-p">Zip Code <span class="snowflake-color">*</span></label>
+            <input type="text" id="zip-code" class="input-for-text" placeholder="Enter your zip code" />
+            <p>This field is required.</p>
+          </div>
+        </div>
+        <div class="checkbox-div">
+          <input type="checkbox" id="news-updates" />
+          <label for="news-updates" class="p-for-checkbox">Please send me latest news and updates</label>
+        </div>
+      </div>
+      <div class="booking-button-div">
+        <button type="submit" class="booking-button">Reserve Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="shadow none"></div>
+</section>
+
+<section class="section-of-plan">
+  <div class="container">
+    <div class="title-of-plan">
+      <h3 class="min-title-of-plan">Plan your trip now</h3>
+      <h2 class="main-title-of-plan">Quick & easy car rental</h2>
+    </div>
+    <div class="grid-of-plan-boxes">
+      <div class="plan-container-boxes">
+        <img src="img/select-car.png" alt="car" class="plan-container-boxes-img" />
+        <h3 class="plan-container-boxes-h3">Select Car</h3>
+        <p class="plan-container-boxes-p">
+          We offers a big range of vehicles for all your driving needs. We
+          have the perfect car to meet your needs
+        </p>
+      </div>
+      <div class="plan-container-boxes">
+        <img src="img/operator.png" alt="car" class="plan-container-boxes-img" />
+        <h3 class="plan-container-boxes-h3">Contact Operator</h3>
+        <p class="plan-container-boxes-p">
+          Our knowledgeable and friendly operators are always ready to help
+          with any questions or concerns
+        </p>
+      </div>
+      <div class="plan-container-boxes">
+        <img src="img/drive.png" alt="car" class="plan-container-boxes-img" />
+        <h3 class="plan-container-boxes-h3">Let's Drive</h3>
+        <p class="plan-container-boxes-p">
+          Whether you're hitting the open road, we've got you covered with
+          our wide range of cars
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container flex-for-containers">
+    <div class="title-for-rental-fleet ">
+      <h3>Vehile Models</h3>
+      <h2>Our rental fleet</h2>
+      <p>Choose from a variety of our amazing vehicles to rent for your next adventure or business trip</p>
+    </div>
+    <div class="grid-for-rental-car-information">
+
+      <div class="div-for-btn">
+        <button class="btn-for-choose-car colored-btn btn-for-choose-mercedes">Mercedes-AMG Gt</button>
+        <button class="btn-for-choose-car btn-for-choose-bmw">Bmw G80</button>
+      </div>
+      <div class="grid-for-img-information-rental-car">
+        <img src="img/car-Mercedes-AMG Gt.png" alt="car" class="rent-fleet-img">
+
+        <div>
+          <div class="div-for-rent-price">
+            <p class="price-for-rent ">$100 /</p>
+            <p class="rent-p"> rent per day</p>
+          </div>
+
+          <div class="div-of-information-about-car">
+            <span>Model</span>
+            <span class="model">Amg Gt</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>Mark</span>
+            <span class="mark">Mercedes</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>Year</span>
+            <span class="year">2016</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>Doors</span>
+            <span class="door">4/5</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>AC</span>
+            <span class="ac">Yes</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>Transmition</span>
+            <span class="Transmition">Automatic</span>
+          </div>
+          <div class="div-of-information-about-car">
+            <span>Fuel</span>
+            <span class="fuel">Gasoline</span>
+          </div>
+          <a href="#select-section" class="a-reserve-now">RESERVE NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner-section">
+  <div class="div-for-banner">
+    <h2>Save big with our cheap car rental!</h2>
+    <p>Top Airports. Local Suppliers. <span>24/7</span> Support.</p>
+  </div>
+</section>
+
+<section class="choose-section">
+  <div class="container">
+    <img src="img/cars.png" alt="cars" class="choose-cars">
+
+    <div class="flex-for-choose-section">
+
+      <div class="div-for-choose-text">
+        <h3>Why Choose Us</h3>
+        <h2>Best valued deals you will ever find</h2>
+        <p>Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with
+          the best value for your money, so you can enjoy top-quality services and products without breaking the bank.
+          Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save
+          big.</p>
+        <a href="#">Find Details <ion-icon name="chevron-forward-outline"></ion-icon></a>
+      </div>
+      <div class="div-for-right-choose-text">
+        <div class="flex-for-right-choose-text">
+
+          <img src="img/download.png" alt="car-img">
+          <div>
+            <h2>Cross Country Drive</h2>
+            <p>Get everything you need in one convenient, transparent price with our all-inclusive pricing policy.</p>
+          </div>
+        </div>
+        <div class="flex-for-right-choose-text">
+
+          <img src="img/download (1).png" alt="car-img">
+          <div>
+            <h2>All Inclusive Pricing</h2>
+            <p>Take your driving experience to the next level with our top-notch vehicles for your cross-country
+              adventures.</p>
+          </div>
+        </div>
+        <div class="flex-for-right-choose-text">
+
+          <img src="img/download (2).png" alt="car-img">
+          <div>
+            <h2>No Hidden Charges</h2>
+            <p>Enjoy peace of mind with our no hidden charges policy. We believe in transparent and honest pricing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="container main-flex-for-testimonial">
+    <div class="testimonials-div">
+      <h3>Reviewed by People</h3>
+      <h2>Client's Testimonials</h2>
+      <p>Discover the positive impact we've made on the our clients by reading through their testimonials. Our clients
+        have experienced our service and results, and they're eager to share their positive experiences with you.</p>
+    </div>
+    <div class="flex-for-testimonial-boxes">
+
+      <div class="testimonial-box">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-for-testimonial" width="60" height="60" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="tabler-icon tabler-icon-quote">
+          <path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"></path>
+          <path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"></path>
+        </svg>
+        <p class="testimonial-comment">"We rented a car from this website and had an amazing experience! The booking
+          was
+          easy and the rental rates
+          were very affordable. "</p>
+        <div class="div-of-testimonial-information">
+          <img src="img/Parry Hotter.jpg" alt="testimonial img">
+          <span>
+            <h4>Parry Hotter</h4>
+            <p>Belgrade</p>
+          </span>
+        </div>
+      </div>
+      <div class="testimonial-box">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-for-testimonial" width="60" height="60" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="tabler-icon tabler-icon-quote">
+          <path d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"></path>
+          <path d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5"></path>
+        </svg>
+        <p class="testimonial-comment">"The car was in great condition and made our trip even better. Highly recommend
+          for this car rental website!"</p>
+        <div class="div-of-testimonial-information">
+          <img src="img/Ron Rizzly.jpg" alt="testimonial img">
+          <span>
+            <h4>Ron Rizzly</h4>
+            <p>Novi Sad</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq-section">
+  <div class="container position-for-faq-section">
+    <div class="div-for-faq-title">
+      <h3>FAQ</h3>
+      <h2>Frequently Asked Questions</h2>
+      <p>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns
+        and
+        Inquiries.</p>
+    </div>
+
+    <div class="main-div-of-faq">
+      <div class="faq active">
+        <div class="question active-question">
+          <p>1. What is special about comparing rental car deals?</p>
+          <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+        </div>
+        <div class="answer">
+          <p class="answer-p">Comparing rental car deals is important as it helps find the best deal that fits your
+            budget and requirements, ensuring you get the most value for your money. By comparing various options, you
+            can find deals that offer lower prices, additional services, or better car models. You can find car rental
+            deals by researching online and comparing prices from different rental companies.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="question">
+          <p>2. How do I find the car rental deals?</p>
+          <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+        </div>
+        <div class="answer">
+          <p class="answer-p">You can find car rental deals by researching online and comparing prices from different
+            rental companies. Websites such as Expedia, Kayak, and Travelocity allow you to compare prices and view
+            available rental options. It is also recommended to sign up for email newsletters and follow rental car
+            companies on social media to be informed of any special deals or promotions.</p>
+        </div>
+      </div>
+      <div class="faq">
+        <div class="question">
+          <p>3. How do I find such low rental car prices?</p>
+          <ion-icon name="chevron-down-outline" class="faq-icon"></ion-icon>
+        </div>
+        <div class="answer">
+          <p class="answer-p">Book in advance: Booking your rental car ahead of time can often result in lower prices.
+            Compare prices from multiple companies: Use websites like Kayak, Expedia, or Travelocity to compare prices
+            from multiple rental car companies. Look for discount codes and coupons: Search for discount codes and
+            coupons that you can use to lower the rental price. Renting from an off-airport location can sometimes
+            result in lower prices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="download-section">
+  <div class="container">
+    <div class="download-text">
+      <h2>Download our app to get most out of it</h2>
+      <p>Thrown shy denote ten ladies though ask saw. Or by to he going think order event music. Incommode so
+        intention defective at convinced. Led income months itself and houses you.</p>
+      <div class="download-text-btns">
+        <img src="img/googleplaydownload.png" alt="download-img">
+        <img src="img/appledownload.png" alt="download-img">
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="grid-for-footer">
+      <ul class="footer-content-1">
+        <li><span>CAR</span> Rental</li>
+        <li>We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.
+        </li>
+        <li><ion-icon name="call-outline" class="footer-icons"></ion-icon><a href="#">(123) -456-789</a></li>
+        <li><ion-icon name="mail-outline" class="footer-icons"></ion-icon><a href="#">carrental@gmail.com</a></li>
+        <li><a href="https://xpeedstudio.com/" target="_blank" style="font-size: 1.4rem; ">Design by XpeedStudio</a>
+        </li>
+      </ul>
+      <ul class="footer-content-2">
+        <li>COMPANY</li>
+        <li><a href="#">New York</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">How we work</a></li>
+      </ul>
+      <ul class="footer-content-2">
+        <li>WORKING HOURS</li>
+        <li>Mon - Fri: 9:00AM - 9:00PM</li>
+        <li>Sat: 9:00AM - 19:00PM</li>
+        <li>Sun: Closed</li>
+      </ul>
+      <ul class="footer-content-2">
+        <li>SUBSCRIPTION</li>
+        <li>Subscribe your Email address for latest news & updates.</li>
+        <li><input type="text" placeholder="Enter Email Address"></li>
+        <li><button class="submit-email">Submit</button></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>
